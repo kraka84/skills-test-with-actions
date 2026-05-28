@@ -1,0 +1,14 @@
+name: python 
+
+on: 
+    workflow_dispatch:
+
+jobs:
+    start:
+        name: Post next step content
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Test with pytest
+              run: |
+                pytest --verbose
